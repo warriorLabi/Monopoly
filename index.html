@@ -1,0 +1,381 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monopoly</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+         
+         table tr td {
+            border: 2px solid black;
+            padding: 0;
+            border-collapse: collapse;
+            background-color: #d8eeeb;
+            position: relative;
+         }
+         table {
+            border-collapse: collapse;
+            height: 100vh;
+            width:65%;
+            margin: 0 auto;
+         }
+         tr.one-elev td{
+            height: 15vh;
+         }
+         tr.one-one td {
+            height: 15vh;
+         }
+         tr td.edge {
+            width: 15%;
+         }
+         span {
+            display: inline-block;
+         }
+         span.brown {
+            background-color: #bb9b69;
+            width: 100%;
+            height: 50%;
+            border-top: 2px solid black;
+            position: relative;
+            bottom: -25%;
+         }
+         span.aqua {
+            width: 100%;
+            height: 50%;
+            border-top: 2px solid black;
+            position: relative;
+            bottom: -25%;
+            background-color: #74d0f7;
+         }
+         span.blue {
+            width: 50%;
+            height: 100%;
+            border-left: 2px solid black;
+            background-color: #0791d1;
+            float: right;
+         }
+         span.green {
+            width: 50%;
+            height: 100%;
+            border-left: 2px solid black;
+            float: right;
+            background-color: #a7d046;
+         }
+         span.yellow {
+            background-color: #f8c832;
+            width: 100%;
+            height: 50%;
+            border-bottom: 2px solid black;
+            position: relative;
+            top:-25%;
+         }
+         span.red {
+            background-color: #e43338;
+            width: 100%;
+            height: 50%;
+            border-bottom: 2px solid black;
+            position: relative;
+            top:-25%;
+         }
+         span.pink {
+            width: 50%;
+            height: 100%;
+            border-right: 2px solid black;
+            background-color: #d86a9b;
+         }
+         span.orange {
+            width: 50%;
+            height: 100%;
+            border-right: 2px solid black;
+            background-color: #f59733;
+         }
+    
+         td img.logo {
+            width: 70%;
+            transform: rotateZ(-45deg);
+            position: absolute;
+            top: 10%;
+            left: 20%;
+         }
+
+         td img.qmark {
+            width: 20%;
+            transform: rotateZ(135deg);
+            position: absolute;
+            top: 25%;
+            left: 20%;
+         }
+         td img.mono-chest {
+            width: 20%;
+            height: 15%;
+            transform: rotateZ(-45deg);
+            position: absolute;
+            right: 15%;
+            bottom: 10%;
+         }
+         td img.goimage, td img.eleven  {
+            width: 80px;
+            height: 60px;
+            transform: rotateZ(180deg);
+         }
+         td p.num2, td p.four {
+            font-size: 6px;
+            width: 2px;
+            height: 5px;
+            
+            transform: rotateZ(180deg);
+            position: absolute;
+            left: 40px;
+            top: 25px;
+         }
+         td img.three {
+            width: 70%;
+            height: 60%;
+            transform: rotateZ(180deg);
+            position: absolute;
+            bottom: 5%;
+         }
+         td p.five {
+            font-size: 8px;
+            width: 2px;
+            height: 5px;
+            transform: rotateZ(180deg);
+            position: absolute;
+            left: 40px;
+            top: 65px;
+         }
+         td img.six {
+            position: absolute;
+            width: 80%;
+            height: 50%;
+            transform: rotateZ(180deg);
+         }
+         td p.seven, td p.nine  {
+            font-size: 8px;
+            width: 2px;
+            height: 5px;
+            transform: rotateZ(180deg);
+            position: absolute;
+            left: 40px;
+            top: 35px;
+         }
+         td img.eight {
+            position: absolute;
+            width: 90%;
+            height: 50%;
+            transform: rotateZ(180deg);
+         }
+         td p.ten {
+            font-size: 8px;
+            width: 2px;
+            height: 5px;
+            transform: rotateZ(180deg);
+            position: absolute;
+            left: 60px;
+            top: 35px;
+         }
+         td p.twelve {
+            font-size: 8px;
+            width: 5px;
+            height: 5px;
+            transform: rotateZ(90deg);
+            position: absolute;
+            left: 39%;
+            top: 35%;
+         }
+         td img.twenty3 {
+            position: absolute;
+            width: 30%;
+            height: 80%;
+            bottom: 15%;
+            transform: rotateZ(90deg);
+         }
+    </style>
+</head>
+<body>
+
+<section>
+    <table>
+    <tr class="one-elev">
+        <td class="edge">
+            <img src="./pic/goimage.png" class="goimage" alt="goimage">
+        </td>
+        <td> 
+           <p class="num2">MEDITERREAN AVENUE <br><br>$60</p> 
+            <span class="brown" style="color:#bb9b69;">2</span></td>
+        <td>
+            <img class="three" src="./pic/monopoly15.jpg" alt="chest">
+        </td>
+        <td> 
+            <p class="four">BALTIC AVENUE <br><br> $60</p>
+            <span class="brown" style="color:#bb9b69;">4</span>
+        </td>
+        <td>
+            <p class="five">INCOME TAX <br><br> PAY $200</p>
+        </td>
+        <td>
+            <img src="./pic/monopoly14.jpg" alt="train" class="six">
+        </td>
+        <td>
+            <p class="seven">ORIENTAL AVENUE <br><br> $100</p> 
+            <span class="aqua" style="color:#74d0f7;">7</span> </td>
+        <td> <img src="./pic/monopoly1.jpg" alt="chance" class="eight"></td>
+        <td>
+            <p class="nine">VERMONT AVENUE <br><br>$100</p>
+            <span class="aqua" style="color:#74d0f7;">9</span> </td>
+        <td> 
+            <p class="ten">CONNECTICUT AVENUE <br><br>$120</p>
+            <span class="aqua" style="color:#74d0f7;">10</span> </td>
+        <td class="edge">
+            <img src="./pic/in-jail.png" alt="jail" class="eleven">
+        </td>
+    </tr>
+    <tr>
+       <td>
+        <p class="twelve">BOARD WALK <br><br> $200</p>
+        <span class="blue" style="color:#0791d1;">12</span> </td>
+       <td colspan="9" rowspan="9"> 
+            <img class="qmark" src="./pic/monopoly quest.jpg" alt="qmark">
+            <img class="logo" src="./pic/monopoly2.png" alt="logo"> 
+            <img class="mono-chest" src="./pic/monopoly15.jpg" alt="chest">
+       </td>
+       <td> <span class="pink" style="color:#d86a9b;">14</span> </td>
+       <!-- <td>15</td>
+       <td>16</td>
+       <td>17</td>
+       <td>18</td>
+       <td>19</td>
+       <td>20</td>
+       <td>21</td>
+       <td>22</td> -->
+    </tr>
+    <tr>
+       <td>
+        <img src="./pic/monopoly5.jpg" alt="bulb" class="twenty3">23
+    </td>
+       <td></td>
+       <!-- <td>25</td>
+       <td>26</td>
+       <td>27</td>
+       <td>28</td>
+       <td>29</td>
+       <td>30</td>
+       <td>31</td>
+       <td>32</td>
+       <td>33</td> -->
+    </tr>
+    <tr>
+       <td><span class="blue" style="color:#0791d1;">34</span> </td>
+       <td><span class="pink" style="color:#d86a9b;">35</span></td>
+       <!-- <td>36</td>
+       <td>37</td>
+       <td>38</td>
+       <td>39</td>
+       <td>40</td>
+       <td>41</td>
+       <td>42</td>
+       <td>43</td>
+       <td>44</td> -->
+    </tr>
+    <tr>
+       <td></td>
+       <td><span class="pink" style="color:#d86a9b;">46</span></td>
+       <!-- <td>47</td>
+       <td>48</td>
+       <td>49</td>
+       <td>50</td>
+       <td>51</td>
+       <td>52</td>
+       <td>53</td>
+       <td>54</td>
+       <td>55</td> -->
+    </tr>
+    <tr>
+        <td></td>
+        <td>.</td>
+        <!-- <td>58</td>
+        <td>59</td>
+        <td>60</td>
+        <td>61</td>
+        <td>62</td>
+        <td>63</td>
+        <td>64</td>
+        <td>65</td>
+        <td>66</td> -->
+    </tr>
+    <tr>
+       <td><span class="green" style="color:#a7d046;">67</span> </td>
+       <td><span class="orange" style="color:#f59733;">68</span></td>
+       <!-- <td>69</td>
+       <td>70</td>
+       <td>71</td>
+       <td>72</td>
+       <td>73</td>
+       <td>74</td>
+       <td>75</td>
+       <td>76</td>
+       <td>77</td> -->
+    </tr>
+    <tr>
+        <td>.</td>
+        <td></td>
+        <!-- <td>80</td>
+        <td>81</td>
+        <td>82</td>
+        <td>83</td>
+        <td>84</td>
+        <td>85</td>
+        <td>86</td>
+        <td>87</td>
+        <td>88</td> -->
+    </tr>
+    <tr>
+        
+        <td> <span class="green" style="color:#a7d046;">89</span> </td>
+        <td><span class="orange" style="color:#f59733;">90</span></td>
+        <!-- <td>91</td>
+        <td>92</td>
+        <td>93</td>
+        <td>94</td>
+        <td>95</td>
+        <td>96</td>
+        <td>97</td>
+        <td>98</td>
+        <td>99</td> -->
+    </tr>
+    <tr>
+       
+       <td> <span class="green" style="color:#a7d046;">100</span> </td>
+       <td> <span class="orange" style="color:#f59733;">101</span> </td>
+       <!-- <td>102</td>
+       <td>103</td>
+       <td>104</td>
+       <td>105</td>
+       <td>106</td>
+       <td>107</td>
+       <td>108</td>
+       <td>109</td>
+       <td>110</td> -->
+    </tr>
+    <tr class="one-one">
+        
+        <td class="edge"></td>
+        <td><span class="yellow" style="color:#f8c832;">112</span> </td>
+        <td>222</td>
+        <td><span class="yellow" style="color:#f8c832;">114</span> </td>
+        <td><span class="yellow" style="color:#f8c832;">115</span></td>
+        <td>333</td>
+        <td><span class="red" style="color:#e43338;">117</span></td>
+        <td><span class="red" style="color:#e43338;">118</span></td>
+        <td>444</td>
+        <td> <span class="red" style="color:#e43338;">120</span></td>
+        <td class="edge"></td>
+    </tr>
+</table>
+</section>
+</body>
+</html>
